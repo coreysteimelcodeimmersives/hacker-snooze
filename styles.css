@@ -23,5 +23,41 @@
 }
 
 .carouselTitle{
-    margin-bottom: 30px;
+    margin: 30px;
+    margin-bottom: 10px;
+    font-weight: bolder;
+    font-size: 65px;
+    font-family: 'Abril Fatface';
+}
+
+.bd-placeholder-img{
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+.podiumNumber{
+    font-weight: bolder;
+    font-size: 95px;
+    height: 140px;
+    width: 140px;
+    background-color: #023047;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#circleOne{
+    color: #FFB703;
+}
+
+#circleTwo{
+    color: #777;
+}
+
+#circleThree{
+    color: #FB8500;
 }
