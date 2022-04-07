@@ -31,28 +31,34 @@
         </div>
       </nav>
       <!-- CAROUSEL -->
-      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-touch="true" data-bs-ride="carousel">
+      <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class></button>
           </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="7000">
+        <div class="carousel-inner text-center">
+          <div class="carousel-item active">
             <img src="assets/hn-logo.webp" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item" style="background-color: black;" data-bs-interval="7000">
-            <img src="assets/black.png" class="d-block w-100" alt="...">
+          <div class="carousel-item" style="background-color: black;">
+            <!-- <img src="" class="d-block w-100" alt="..."> -->
+            <div class="d-flex h-100 align-items-center justify-content-center">
+                <h1 class="carouselTitle">New</h1>
+                <h4>Elizabeth Holmes didn’t exist, so it was necessary to invent her</h4>
+                <h4>How do I practically create wealth?</h4>
+                <h4>Pasta intake and risks of type 2 diabetes and cardiovascular disease</h4>
+            </div>
           </div>
-          <div class="carousel-item" style="background-color: black;" data-bs-interval="7000">
+          <div class="carousel-item" style="background-color: black;" >
             <img src="assets/hn-logo copy.png" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
