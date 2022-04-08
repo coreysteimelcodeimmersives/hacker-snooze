@@ -1,63 +1,74 @@
-#myCarousel{
-    margin-bottom: 50px;
+#myCarousel {
+  margin-bottom: 50px;
 }
-.row{
-    margin-bottom: 30px;
+.row {
+  margin-bottom: 30px;
 }
 
 .carousel-item {
-    height: 50vh;
-    background-size: cover;
-    background-position: center center;
-    background-image: linear-gradient(#023047, #219EBC, #FFB703)
+  height: 50vh;
+  background-size: cover;
+  background-position: center center;
+  background-image: linear-gradient(#023047, #219ebc, #ffb703);
 }
 
 .carousel-item h1 {
-    margin: 0;
-    color: white;
+  margin: 0;
+  color: white;
 }
 
-.d-flex{
-    display: flex;
-    flex-direction: column;
+.d-flex {
+  display: flex;
+  flex-direction: column;
 }
 
-.carouselTitle{
-    margin: 30px;
-    margin-bottom: 10px;
-    font-weight: bolder;
-    font-size: 65px;
-    font-family: 'Abril Fatface';
+.carouselTitle {
+  margin: 18px;
+  font-weight: bolder;
+  font-size: 65px;
+  font-family: "Abril Fatface";
 }
 
-.bd-placeholder-img{
-    display: flex;
-    justify-items: center;
-    align-content: center;
-    margin-bottom: 10px;
+.carouselStories {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 6px;
 }
 
-.podiumNumber{
-    font-weight: bolder;
-    font-size: 95px;
-    height: 140px;
-    width: 140px;
-    background-color: #023047;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+.carousel-btn {
+  margin-top: 24px;
+  /* background-color: #8ECAE6;  */
+  color: #8ecae6;
 }
 
-#circleOne{
-    color: #FFB703;
+.bd-placeholder-img {
+  display: flex;
+  justify-items: center;
+  align-content: center;
+  margin-bottom: 10px;
 }
 
-#circleTwo{
-    color: #777;
+.podiumNumber {
+  font-weight: bolder;
+  font-size: 95px;
+  height: 140px;
+  width: 140px;
+  background-color: #023047;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-#circleThree{
-    color: #FB8500;
+#circleOne {
+  color: #ffb703;
+}
+
+#circleTwo {
+  color: #777;
+}
+
+#circleThree {
+  color: #fb8500;
 }
