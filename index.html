@@ -31,13 +31,10 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <!-- <a class="nav-link active" aria-current="page" href="#">New</a> -->
-                    <a class="nav-link" href="#">New</a>
-                    <a class="nav-link" href="#">Past</a>
-                    <a class="nav-link" href="#">Comments</a>
-                    <a class="nav-link" href="#">Ask</a>
-                    <a class="nav-link" href="#">Show</a>
-                    <a class="nav-link" href="#">Jobs</a>
-
+                    <a class="nav-link" href="#" id='newNav'>New</a>
+                    <a class="nav-link" href="#" id='pastNav'>Past</a>
+                    <a class="nav-link" href="#" id='askNav'>Ask</a>
+                    <a class="nav-link" href="#" id='showNav'>Show</a>
                 </div>
             </div>
         </div>
@@ -52,120 +49,86 @@
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class></button>
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" class></button>
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5" class></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6" class></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7" class></button>
         </div>
         <div class="carousel-inner text-center">
             <div class="carousel-item active">
                 <div class="d-flex h-100 align-items-center justify-content-top">
                     <div class="carouselTitle">Hacker News</div>
-                    <div class="carouselStories">Elizabeth Holmes didn’t exist, so it was necessary to invent her</div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <div class="carouselStories" id="hackerNewsCarouselStoryOne">Elizabeth Holmes didn’t exist, so it was necessary to invent her</div>
+                    <div class="carouselStorySubText" id="hackerNewsCarouselSubTextOne"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories">How do I practically create wealth?</div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <div class="carouselStories" id='hackerNewsCarouselStoryTwo'>How do I practically create wealth?</div>
+                    <div class="carouselStorySubText" id='hackerNewsCarouselSubTextTwo'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories">Pasta intake and risks of type 2 diabetes and cardiovascular disease
+                    <div class="carouselStories" id="hackerNewsCarouselStoryThree">Pasta intake and risks of type 2 diabetes and cardiovascular disease
                     </div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <div class="carouselStorySubText" id='hackerNewsCarouselSubTextThree'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
                     </div>
-                    <button type="button" class="btn btn-info btn-sm carousel-btn">More Stories</button>
+                    <button type="button" class="btn btn-info btn-sm carousel-btn" id='hackerNewsCarouselMoreButton'>More Stories</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="d-flex h-100 align-items-center justify-content-top">
                     <div class="carouselTitle">New</div>
-                    <div class="carouselStories">Elizabeth Holmes didn’t exist, so it was necessary to invent her</div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <div class="carouselStories" id='newCarouselStoryOne'>Elizabeth Holmes didn’t exist, so it was necessary to invent her</div>
+                    <div class="carouselStorySubText" id='newCarouselSubTextOne'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories">How do I practically create wealth?</div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <div class="carouselStories" id='newCarouselStoryTwo'>How do I practically create wealth?</div>
+                    <div class="carouselStorySubText" id='newCarouselSubTextTwo'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories">Pasta intake and risks of type 2 diabetes and cardiovascular disease
+                    <div class="carouselStories" id='newCarouselStoryThree'>Pasta intake and risks of type 2 diabetes and cardiovascular disease
                     </div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <div class="carouselStorySubText" id='newCarouselSubTextThree'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
                     </div>
-                    <button type="button" class="btn btn-info btn-sm carousel-btn">More Stories</button>
+                    <button type="button" class="btn btn-info btn-sm carousel-btn" id='newCarouselMoreButton'>More Stories</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="d-flex h-100 align-items-center justify-content-top">
                     <div class="carouselTitle">Past</div>
-                    <div class="carouselStories">Elizabeth Holmes didn’t exist, so it was necessary to invent her</div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <div class="carouselStories" id='pastCarouselStoryOne'>Elizabeth Holmes didn’t exist, so it was necessary to invent her</div>
+                    <div class="carouselStorySubText" id='pastCarouselSubTextOne'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories">How do I practically create wealth?</div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <div class="carouselStories" id='pastCarouselStoryTwo'>How do I practically create wealth?</div>
+                    <div class="carouselStorySubText" id='pastCarouselSubTextTwo'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories">Pasta intake and risks of type 2 diabetes and cardiovascular disease
+                    <div class="carouselStories" id='pastCarouselStoryThree'>Pasta intake and risks of type 2 diabetes and cardiovascular disease
                     </div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <div class="carouselStorySubText" id='pastCarouselSubTextThree'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
                     </div>
-                    <button type="button" class="btn btn-info btn-sm carousel-btn">More Stories</button>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex h-100 align-items-center justify-content-top">
-                    <div class="carouselTitle">Comments</div>
-                    <div class="carouselStories">Elizabeth Holmes didn’t exist, so it was necessary to invent her</div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
-                    </div>
-                    <div class="carouselStories">How do I practically create wealth?</div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
-                    </div>
-                    <div class="carouselStories">Pasta intake and risks of type 2 diabetes and cardiovascular disease
-                    </div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
-                    </div>
-                    <button type="button" class="btn btn-info btn-sm carousel-btn">More Stories</button>
+                    <button type="button" class="btn btn-info btn-sm carousel-btn" id='pastCarouselMoreButton'>More Stories</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="d-flex h-100 align-items-center justify-content-top">
                     <div class="carouselTitle">Ask</div>
-                    <div class="carouselStories">Elizabeth Holmes didn’t exist, so it was necessary to invent her</div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <div class="carouselStories" id='askCarouselStoryOne'>Elizabeth Holmes didn’t exist, so it was necessary to invent her</div>
+                    <div class="carouselStorySubText" id='askCarouselSubTextOne'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories">How do I practically create wealth?</div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <div class="carouselStories" id='askCarouselStoryTwo'>How do I practically create wealth?</div>
+                    <div class="carouselStorySubText" id='askCarouselSubTextTwo'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories">Pasta intake and risks of type 2 diabetes and cardiovascular disease
+                    <div class="carouselStories" id='askCarouselStoryThree'>Pasta intake and risks of type 2 diabetes and cardiovascular disease
                     </div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <div class="carouselStorySubText" id='askCarouselSubTextThree'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
                     </div>
-                    <button type="button" class="btn btn-info btn-sm carousel-btn">More Stories</button>
+                    <button type="button" class="btn btn-info btn-sm carousel-btn" id='asCarouselkMoreButton'>More Stories</button>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="d-flex h-100 align-items-center justify-content-top">
                     <div class="carouselTitle">Show</div>
-                    <div class="carouselStories">Elizabeth Holmes didn’t exist, so it was necessary to invent her</div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <div class="carouselStories" id='showCarouselStoryOne'>Elizabeth Holmes didn’t exist, so it was necessary to invent her</div>
+                    <div class="carouselStorySubText" id='showCarouselSubTextOne'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories">How do I practically create wealth?</div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <div class="carouselStories" id='showCarouselStoryTwo'>How do I practically create wealth?</div>
+                    <div class="carouselStorySubText" id='showCarouselSubTextTwo'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories">Pasta intake and risks of type 2 diabetes and cardiovascular disease
+                    <div class="carouselStories" id='showCarouselStoryThree'>Pasta intake and risks of type 2 diabetes and cardiovascular disease
                     </div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <div class="carouselStorySubText" id='showCarouselSubTextThree'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
                     </div>
-                    <button type="button" class="btn btn-info btn-sm carousel-btn">More Stories</button>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex h-100 align-items-center justify-content-top">
-                    <div class="carouselTitle">Jobs</div>
-                    <div class="carouselStories">Elizabeth Holmes didn’t exist, so it was necessary to invent her</div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
-                    </div>
-                    <div class="carouselStories">How do I practically create wealth?</div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
-                    </div>
-                    <div class="carouselStories">Pasta intake and risks of type 2 diabetes and cardiovascular disease
-                    </div>
-                    <div class="carouselStorySubText"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
-                    </div>
-                    <button type="button" class="btn btn-info btn-sm carousel-btn">More Stories</button>
+                    <button type="button" class="btn btn-info btn-sm carousel-btn" id='showCarouselMoreButton'>More Stories</button>
                 </div>
             </div>
         </div>
@@ -187,29 +150,22 @@
 
             <div class="col-lg-4">
                 <span class="podiumNumber" id="circleOne">1</span>
-                <h2 class="podiumStoryTitle">Heading</h2>
-                <div class="podiumStorySubText">104 points by Jim John</div>
-                <p class="podiumStoryPreview">Some representative placeholder content for the three columns of text
-                    below the carousel. This is the
-                    first column.</p>
+                <h2 class="podiumStoryTitle" id="podiumTitleOne">Heading</h2>
+                <div class="podiumStorySubText" id='podiumSubTextOne'>104 points by Jim John</div>
                 <p><a class="btn btn-secondary" href="#">44 Comments »</a></p>
             </div><!-- /.col-lg-4 -->
 
             <div class="col-lg-4">
                 <span class="podiumNumber" id="circleTwo">2</span>
-                <h2 class="podiumStoryTitle">Heading</h2>
-                <div class="podiumStorySubText">104 points by Jim John</div>
-                <p class="podiumStoryPreview">Another exciting bit of representative placeholder content. This time,
-                    we've moved on to the second
-                    column.</p>
+                <h2 class="podiumStoryTitle" id="podiumTitleTwo">Heading</h2>
+                <div class="podiumStorySubText" id="podiumSubTextTwo">104 points by Jim John</div>
                 <p><a class="btn btn-secondary" href="#">201 Comments »</a></p>
             </div><!-- /.col-lg-4 -->
 
             <div class="col-lg-4">
                 <span class="podiumNumber" id="circleThree">3</span>
-                <h2 class="podiumStoryTitle">Heading</h2>
-                <div class="podiumStorySubText">104 points by Jim John</div>
-                <p>And lastly this, the third column of representative placeholder content.</p>
+                <h2 class="podiumStoryTitle" id="podiumTitleThree">Heading</h2>
+                <div class="podiumStorySubText" id='podiumSubTextThree'>104 points by Jim John</div>
                 <p><a class="btn btn-secondary" href="#">7 Comments »</a></p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
@@ -221,18 +177,21 @@
                     <td>Title</td>
                     <td>Score</td>
                     <td>Author</td>
+                    <td>Comments</td>
                 </tr>
                 <tr>
                     <th scope="row">5</th>
                     <td>Title</td>
                     <td>Score</td>
                     <td>Author</td>
+                    <td>Comments</td>
                 </tr>
                 <tr>
                     <th scope="row">6</th>
                     <td>Title</td>
                     <td>Score</td>
                     <td>Author</td>
+                    <td>Comments</td>
                 </tr>
             </tbody>
         </table>
