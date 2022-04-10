@@ -73,7 +73,7 @@ newNav.addEventListener('click', function () {
     updatePodium(newPodiumTitlesArray, newPodiumSubTextPointsArray, newPodiumSubTextAuthorArray, newPodiumCommentsNumberArray);
 });
 
-newCarouselMoreButtonDOM.addEventListener('click', function(){
+newCarouselMoreButtonDOM.addEventListener('click', function () {
     updatePodium(newPodiumTitlesArray, newPodiumSubTextPointsArray, newPodiumSubTextAuthorArray, newPodiumCommentsNumberArray);
 })
 
@@ -121,3 +121,39 @@ let updatePodium = (podiumTitlesArray, podiumSubTextPointsArray, podiumSubTextAu
         setPodiumCommentsNumber(podiumCommentsNumberArray[i], podiumCommentsNumber[i]);
     }
 }
+
+// JQUERY
+let rowNumber = 0;
+let rowURL = 'https://www.w3schools.com/';
+let rowTitle = 'Elizabeth Holmes didn’t exist, so it was necessary to invent: ';
+let rowScore = 'Score: ';
+let rowAuthor = 'Author: ';
+let rowComments = 'Comments: ';
+var myTable = $("#myTable > tbody");
+var tableRow = $("<tr><td class='tableStories'>1</td><td class='tableStories'>Title</td><td class='tableStories'>Score</td><td> class='tableStories'Author</td><td class='tableStories'>Comments</td></tr>");
+
+let updateTableRow = (rowNumber, rowURL, rowTitle, rowScore, rowAuthor, rowComments) => {
+    for (let i = 1; i < 98; i++) {
+        rowNumber = i;
+        let newRowTitle = `${rowTitle} ${i}`;
+        let newRowScore = `${rowScore} ${i}`;
+        let newRowAuthor = `${rowAuthor} ${i}`;
+        let newRowComments = `${rowComments} ${i}`;
+        myTable = $("#myTable > tbody");
+        tableRow = $(`<tr><td class='tableStories'>${rowNumber}</td><td class='tableStories'><a href=${rowURL}>${newRowTitle}</a></td><td class='tableStories'>${newRowScore}</td><td class='tableStories'>${newRowAuthor}</td><td class='tableStories'>${newRowComments}</td></tr>`).css({'font-weight': 'bold', 'font-size': '18 px'});
+        myTable.append(tableRow);
+    }
+};
+
+updateTableRow(rowNumber, rowURL, rowTitle, rowScore, rowAuthor, rowComments);
+
+// .css({
+//     'font-size': '18 px',
+//     'font-family': "Poppins",
+//     'color': '#333333',
+//     'font-weight': 'bold'
+// });
+
+
+            // 'font-family': "Poppins",
+            // 'color': '#333333',
