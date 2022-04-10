@@ -131,6 +131,11 @@ let rowAuthor = 'Author: ';
 let rowComments = 'Comments: ';
 var myTable = $("#myTable > tbody");
 var tableRow = $("<tr><td class='tableStories'>1</td><td class='tableStories'>Title</td><td class='tableStories'>Score</td><td> class='tableStories'Author</td><td class='tableStories'>Comments</td></tr>");
+var tdRowNumber = $(`<td class='tableStories'>Number</td>`);
+var tdRowTitle = $(`<td class='tableStories'><a href='https://www.w3schools.com/'>Title</a></td>`);
+var tdRowScore = $(`<td class='tableStories'>Score</td>`);
+var tdRowAuthor = $(`<td class='tableStories'>Author</td>`);
+var tdRowComments = $(`<td class='tableStories'>Comments</td><`);
 
 let updateTableRow = (rowNumber, rowURL, rowTitle, rowScore, rowAuthor, rowComments) => {
     for (let i = 1; i < 98; i++) {
@@ -140,7 +145,17 @@ let updateTableRow = (rowNumber, rowURL, rowTitle, rowScore, rowAuthor, rowComme
         let newRowAuthor = `${rowAuthor} ${i}`;
         let newRowComments = `${rowComments} ${i}`;
         myTable = $("#myTable > tbody");
-        tableRow = $(`<tr><td class='tableStories'>${rowNumber}</td><td class='tableStories'><a href=${rowURL}>${newRowTitle}</a></td><td class='tableStories'>${newRowScore}</td><td class='tableStories'>${newRowAuthor}</td><td class='tableStories'>${newRowComments}</td></tr>`).css({'font-weight': 'bold', 'font-size': '18 px'});
+        tableRow = $(`<tr></tr>`);
+        tdRowNumber = $(`<td class='tableStyle'>${rowNumber}</td>`);
+        tdRowTitle = $(`<td class='tableStories'><a class='tableStories' href=${rowURL}>${newRowTitle}</a></td>`);
+        tdRowScore = $(`<td class='tableStyle'>${newRowScore}</td>`);
+        tdRowAuthor = $(`<td class='tableStyle'>${newRowAuthor}</td>`);
+        tdRowComments = $(`<td class='tableStyle'>${newRowComments}</td><`);
+        tableRow.append(tdRowNumber);
+        tableRow.append(tdRowTitle);
+        tableRow.append(tdRowScore);
+        tableRow.append(tdRowAuthor);
+        tableRow.append(tdRowComments);
         myTable.append(tableRow);
     }
 };
@@ -157,3 +172,7 @@ updateTableRow(rowNumber, rowURL, rowTitle, rowScore, rowAuthor, rowComments);
 
             // 'font-family': "Poppins",
             // 'color': '#333333',
+
+
+        //     tableRow = $(`<tr><td class='tableStories'>${rowNumber}</td><td class='tableStories'><a href=${rowURL}>${newRowTitle}</a></td><td class='tableStories'>${newRowScore}</td><td class='tableStories'>${newRowAuthor}</td><td class='tableStories'>${newRowComments}</td></tr>`).css({'font-weight': 'bold', 'font-size': '18 px'});
+        // myTable.append(tableRow);
