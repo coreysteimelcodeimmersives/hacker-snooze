@@ -29,15 +29,44 @@
   font-family: "Abril Fatface";
 }
 
-.carouselStories {
-  font-weight: bold;
+.carouselStories:link {
   font-size: 18px;
+  font-family: "Poppins";
+  color: #333333;
+  font-weight: bold;
 }
 
-.carouselStorySubText{
-    font-size: 12px;
-    color: #FFB703;
-    margin-bottom: 8px;
+.carouselStories:visited {
+  font-size: 18px;
+  font-family: "Poppins";
+  color: #333333;
+  font-weight: bold;
+}
+
+.carouselStories:hover {
+  font-size: 18px;
+  font-family: "Poppins";
+  color: #8ecae6;
+  font-weight: bold;
+}
+
+.carouselStories:active {
+  font-size: 18px;
+  font-family: "Poppins";
+  color: #333333;
+  font-weight: bold;
+}
+
+.carouselStorySubText {
+  font-size: 12px;
+  color: #ffb703;
+  margin-bottom: 8px;
+}
+
+.carouselStorySubText:hover {
+  font-size: 12px;
+  color: #fb8500;
+  margin-bottom: 8px;
 }
 
 .carousel-btn {
@@ -76,8 +105,36 @@
   color: #fb8500;
 }
 
-.podiumStorySubText{
-    font-size: 12px;
-    color: gray;
-    margin-bottom: 6px;
+.podiumStorySubText {
+  font-size: 12px;
+  color: gray;
+  margin-bottom: 6px;
 }
+
+.tableStories:link {
+  font-size: 18px;
+  font-family: "Poppins";
+  color: #333333;
+  font-weight: bold;
+}
+
+.tableStories:visited {
+    font-size: 18px;
+    font-family: "Poppins";
+    color: #333333;
+    font-weight: bold;
+  }
+
+  .tableStories:hover {
+    font-size: 18px;
+    font-family: "Poppins";
+    color: #8ecae6;
+    font-weight: bold;
+  }
+
+  .tableStories:active {
+    font-size: 18px;
+    font-family: "Poppins";
+    color: #333333;
+    font-weight: bold;
+  }

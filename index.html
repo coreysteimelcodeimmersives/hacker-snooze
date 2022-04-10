@@ -42,6 +42,7 @@
 
     <!-- CAROUSEL -->
     <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
                 aria-label="Slide 1"></button>
@@ -50,88 +51,150 @@
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4" class></button>
             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5" class></button>
         </div>
+
         <div class="carousel-inner text-center">
+
             <div class="carousel-item active">
                 <div class="d-flex h-100 align-items-center justify-content-top">
                     <div class="carouselTitle">Hacker News</div>
-                    <div class="carouselStories" id="hackerNewsCarouselStoryOne">Elizabeth Holmes didn’t exist, so it was necessary to invent her</div>
-                    <div class="carouselStorySubText" id="hackerNewsCarouselSubTextOne"> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <a class="carouselStories" id="hackerNewsCarouselStoryOne" href="https://www.w3schools.com/">
+                        Elizabeth Holmes didn’t exist, so it was necessary to invent her
+                    </a>
+                    <div type="button" class="carouselStorySubText" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" id="hackerNewsCarouselSubTextOne">
+                        104 points by jamespwilliams 1
+                        hour ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories" id='hackerNewsCarouselStoryTwo'>How do I practically create wealth?</div>
-                    <div class="carouselStorySubText" id='hackerNewsCarouselSubTextTwo'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+
+                    <a class="carouselStories" id='hackerNewsCarouselStoryTwo' href="https://www.w3schools.com/">How do
+                        I practically create wealth?
+                    </a>
+                    <div type="button" class="carouselStorySubText" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" id='hackerNewsCarouselSubTextTwo'> 104 points by jamespwilliams 1
+                        hour ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories" id="hackerNewsCarouselStoryThree">Pasta intake and risks of type 2 diabetes and cardiovascular disease
+                    <a class="carouselStories" id="hackerNewsCarouselStoryThree" href="https://www.w3schools.com/">Pasta
+                        intake and risks of type 2
+                        diabetes and cardiovascular disease
+                    </a>
+                    <div type="button" class="carouselStorySubText" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" id='hackerNewsCarouselSubTextThree'> 104 points by jamespwilliams
+                        1 hour ago | hide | 41 comments
                     </div>
-                    <div class="carouselStorySubText" id='hackerNewsCarouselSubTextThree'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
-                    </div>
-                    <button type="button" class="btn btn-info btn-sm carousel-btn" id='hackerNewsCarouselMoreButton'>More Stories</button>
+                    <button type="button" class="btn btn-info btn-sm carousel-btn"
+                        id='hackerNewsCarouselMoreButton'>More Stories</button>
                 </div>
             </div>
+
             <div class="carousel-item">
                 <div class="d-flex h-100 align-items-center justify-content-top">
                     <div class="carouselTitle">New</div>
-                    <div class="carouselStories" id='newCarouselStoryOne'>Elizabeth Holmes didn’t exist, so it was necessary to invent her</div>
-                    <div class="carouselStorySubText" id='newCarouselSubTextOne'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <a class="carouselStories" id='newCarouselStoryOne' href="https://www.w3schools.com/">Elizabeth
+                        Holmes didn’t exist, so it was
+                        necessary to invent her</a>
+                    <div type="button" class="carouselStorySubText" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" id='newCarouselSubTextOne'> 104 points by jamespwilliams 1 hour
+                        ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories" id='newCarouselStoryTwo'>How do I practically create wealth?</div>
-                    <div class="carouselStorySubText" id='newCarouselSubTextTwo'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <a class="carouselStories" id='newCarouselStoryTwo' href="https://www.w3schools.com/">How do I
+                        practically create wealth?</a>
+                    <div type="button" class="carouselStorySubText" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" id='newCarouselSubTextTwo'> 104 points by jamespwilliams 1 hour
+                        ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories" id='newCarouselStoryThree'>Pasta intake and risks of type 2 diabetes and cardiovascular disease
+                    <a class="carouselStories" id='newCarouselStoryThree' href="https://www.w3schools.com/">Pasta intake
+                        and risks of type 2 diabetes
+                        and cardiovascular disease
+                    </a>
+                    <div type="button" class="carouselStorySubText" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" id='newCarouselSubTextThree'> 104 points by jamespwilliams 1 hour
+                        ago | hide | 41 comments
                     </div>
-                    <div class="carouselStorySubText" id='newCarouselSubTextThree'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
-                    </div>
-                    <button type="button" class="btn btn-info btn-sm carousel-btn" id='newCarouselMoreButton'>More Stories</button>
+                    <button type="button" class="btn btn-info btn-sm carousel-btn" id='newCarouselMoreButton'>More
+                        Stories</button>
                 </div>
             </div>
+
             <div class="carousel-item">
                 <div class="d-flex h-100 align-items-center justify-content-top">
                     <div class="carouselTitle">Past</div>
-                    <div class="carouselStories" id='pastCarouselStoryOne'>Elizabeth Holmes didn’t exist, so it was necessary to invent her</div>
-                    <div class="carouselStorySubText" id='pastCarouselSubTextOne'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <a class="carouselStories" id='pastCarouselStoryOne' href="https://www.w3schools.com/">Elizabeth
+                        Holmes didn’t exist, so it was
+                        necessary to invent her</a>
+                    <div type="button" class="carouselStorySubText" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" id='pastCarouselSubTextOne'> 104 points by jamespwilliams 1 hour
+                        ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories" id='pastCarouselStoryTwo'>How do I practically create wealth?</div>
-                    <div class="carouselStorySubText" id='pastCarouselSubTextTwo'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <a class="carouselStories" id='pastCarouselStoryTwo' href="https://www.w3schools.com/">How do I
+                        practically create wealth?</a>
+                    <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        class="carouselStorySubText" id='pastCarouselSubTextTwo'> 104 points by jamespwilliams 1 hour
+                        ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories" id='pastCarouselStoryThree'>Pasta intake and risks of type 2 diabetes and cardiovascular disease
+                    <a class="carouselStories" id='pastCarouselStoryThree' href="https://www.w3schools.com/">Pasta
+                        intake and risks of type 2 diabetes
+                        and cardiovascular disease
+                    </a>
+                    <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="carouselStorySubText" id='pastCarouselSubTextThree'> 104 points by jamespwilliams 1 hour
+                        ago | hide | 41 comments
                     </div>
-                    <div class="carouselStorySubText" id='pastCarouselSubTextThree'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
-                    </div>
-                    <button type="button" class="btn btn-info btn-sm carousel-btn" id='pastCarouselMoreButton'>More Stories</button>
+                    <button type="button" class="btn btn-info btn-sm carousel-btn" id='pastCarouselMoreButton'>More
+                        Stories</button>
                 </div>
             </div>
+
             <div class="carousel-item">
                 <div class="d-flex h-100 align-items-center justify-content-top">
                     <div class="carouselTitle">Ask</div>
-                    <div class="carouselStories" id='askCarouselStoryOne'>Elizabeth Holmes didn’t exist, so it was necessary to invent her</div>
-                    <div class="carouselStorySubText" id='askCarouselSubTextOne'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <a class="carouselStories" id='askCarouselStoryOne' href="https://www.w3schools.com/">Elizabeth
+                        Holmes didn’t exist, so it was necessary to invent her</a>
+                    <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="carouselStorySubText" id='askCarouselSubTextOne'> 104 points by jamespwilliams 1 hour
+                        ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories" id='askCarouselStoryTwo'>How do I practically create wealth?</div>
-                    <div class="carouselStorySubText" id='askCarouselSubTextTwo'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <a class="carouselStories" id='askCarouselStoryTwo' href="https://www.w3schools.com/">How do I
+                        practically create wealth?</a>
+                    <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="carouselStorySubText" id='askCarouselSubTextTwo'> 104 points by jamespwilliams 1 hour
+                        ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories" id='askCarouselStoryThree'>Pasta intake and risks of type 2 diabetes and cardiovascular disease
+                    <a class="carouselStories" id='askCarouselStoryThree' href="https://www.w3schools.com/">Pasta intake
+                        and risks of type 2 diabetes
+                        and cardiovascular disease
+                    </a>
+                    <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="carouselStorySubText" id='askCarouselSubTextThree'> 104 points by jamespwilliams 1 hour
+                        ago | hide | 41 comments
                     </div>
-                    <div class="carouselStorySubText" id='askCarouselSubTextThree'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
-                    </div>
-                    <button type="button" class="btn btn-info btn-sm carousel-btn" id='asCarouselkMoreButton'>More Stories</button>
+                    <button type="button" class="btn btn-info btn-sm carousel-btn" id='asCarouselkMoreButton'>More
+                        Stories</button>
                 </div>
             </div>
+
             <div class="carousel-item">
                 <div class="d-flex h-100 align-items-center justify-content-top">
                     <div class="carouselTitle">Show</div>
-                    <div class="carouselStories" id='showCarouselStoryOne'>Elizabeth Holmes didn’t exist, so it was necessary to invent her</div>
-                    <div class="carouselStorySubText" id='showCarouselSubTextOne'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <a class="carouselStories" id='showCarouselStoryOne' href="https://www.w3schools.com/">Elizabeth
+                        Holmes didn’t exist, so it was necessary to invent her</a>
+                    <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="carouselStorySubText" id='showCarouselSubTextOne'> 104 points by jamespwilliams 1 hour
+                        ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories" id='showCarouselStoryTwo'>How do I practically create wealth?</div>
-                    <div class="carouselStorySubText" id='showCarouselSubTextTwo'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
+                    <a class="carouselStories" id='showCarouselStoryTwo' href="https://www.w3schools.com/">How do I
+                        practically create wealth?</a>
+                    <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="carouselStorySubText" id='showCarouselSubTextTwo'> 104 points by jamespwilliams 1 hour
+                        ago | hide | 41 comments
                     </div>
-                    <div class="carouselStories" id='showCarouselStoryThree'>Pasta intake and risks of type 2 diabetes and cardiovascular disease
+                    <a class="carouselStories" id='showCarouselStoryThree' href="https://www.w3schools.com/">Pasta
+                        intake and risks of type 2 diabetes
+                        and cardiovascular disease
+                    </a>
+                    <div type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="carouselStorySubText" id='showCarouselSubTextThree'> 104 points by jamespwilliams 1 hour
+                        ago | hide | 41 comments
                     </div>
-                    <div class="carouselStorySubText" id='showCarouselSubTextThree'> 104 points by jamespwilliams 1 hour ago | hide | 41 comments
-                    </div>
-                    <button type="button" class="btn btn-info btn-sm carousel-btn" id='showCarouselMoreButton'>More Stories</button>
+                    <button type="button" class="btn btn-info btn-sm carousel-btn" id='showCarouselMoreButton'>More
+                        Stories</button>
                 </div>
             </div>
+
         </div>
+
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -152,21 +215,21 @@
                 <span class="podiumNumber" id="circleOne">1</span>
                 <h2 class="podiumStoryTitle" id="podiumTitleOne">Heading</h2>
                 <div class="podiumStorySubText" id='podiumSubTextOne'>104 points by Jim John</div>
-                <p><a class="btn btn-secondary" href="#">44 Comments »</a></p>
+                <p><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-secondary">44 Comments »</a></p>
             </div><!-- /.col-lg-4 -->
 
             <div class="col-lg-4">
                 <span class="podiumNumber" id="circleTwo">2</span>
                 <h2 class="podiumStoryTitle" id="podiumTitleTwo">Heading</h2>
                 <div class="podiumStorySubText" id="podiumSubTextTwo">104 points by Jim John</div>
-                <p><a class="btn btn-secondary" href="#">201 Comments »</a></p>
+                <p><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-secondary">201 Comments »</a></p>
             </div><!-- /.col-lg-4 -->
 
             <div class="col-lg-4">
                 <span class="podiumNumber" id="circleThree">3</span>
                 <h2 class="podiumStoryTitle" id="podiumTitleThree">Heading</h2>
                 <div class="podiumStorySubText" id='podiumSubTextThree'>104 points by Jim John</div>
-                <p><a class="btn btn-secondary" href="#">7 Comments »</a></p>
+                <p><a type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-secondary">7 Comments »</a></p>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
         <!-- TABLE -->
@@ -174,29 +237,55 @@
             <tbody>
                 <tr>
                     <th scope="row">4</th>
-                    <td>Title</td>
+                    <td><a class="tableStories" id='tableStoryOne' href="https://www.w3schools.com/">Elizabeth
+                        Holmes didn’t exist, so it was
+                        necessary to invent her</a></td>
                     <td>Score</td>
                     <td>Author</td>
-                    <td>Comments</td>
+                    <td type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Comments</td>
                 </tr>
                 <tr>
                     <th scope="row">5</th>
-                    <td>Title</td>
+                    <td><a class="tableStories" id='tableStoryTwo' href="https://www.w3schools.com/">Elizabeth
+                        Holmes didn’t exist, so it was
+                        necessary to invent her</a></td>
                     <td>Score</td>
                     <td>Author</td>
-                    <td>Comments</td>
+                    <td type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Comments</td>
                 </tr>
                 <tr>
                     <th scope="row">6</th>
-                    <td>Title</td>
+                    <td><a class="tableStories" id='tableStoryThree' href="https://www.w3schools.com/">Elizabeth
+                        Holmes didn’t exist, so it was
+                        necessary to invent her</a></td>
                     <td>Score</td>
                     <td>Author</td>
-                    <td>Comments</td>
+                    <td type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Comments</td>
                 </tr>
             </tbody>
         </table>
 
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="main.js"></script>
 </body>

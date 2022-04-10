@@ -5,8 +5,11 @@ let pastNav = document.querySelector('#pastNav');
 let askNav = document.querySelector('#askNav');
 let showNav = document.querySelector('#showNav');
 let hackerNewsCarouselStoryOneDOM = document.querySelector("#hackerNewsCarouselStoryOne");
+let hackerNewsCarouselSubTextOneDOM = document.querySelector('#hackerNewsCarouselSubTextOne');
 let hackerNewsCarouselStoryTwoDOM = document.querySelector("#hackerNewsCarouselStoryTwo");
+let hackerNewsCarouselSubTextTwoDOM = document.querySelector('#hackerNewsCarouselSubTexTwo');
 let hackerNewsCarouselStoryThreeDOM = document.querySelector("#hackerNewsCarouselStoryThree");
+let hackerNewsCarouselSubTextThreeDOM = document.querySelector('#hackerNewsCarouselSubTextThree');
 let newCarouselStoryOneDOM = document.querySelector("#newCarouselStoryOne");
 let newCarouselStoryTwoDOM = document.querySelector("#newCarouselStoryTwo");
 let newCarouselStoryThreeDOM = document.querySelector("#newCarouselStoryThree");
@@ -78,7 +81,6 @@ showNav.addEventListener('click', function(){
         setPodiumSubText(podiumSubTextDOMArray[i], podiumSubTextPointsArray[i], podiumSubTextAuthorArray[i]);
     }
 });
-
 
 // Helper Functions
 let setPodiumTitles = (podiumTitleDOM, podiumTitle) => {
