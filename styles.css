@@ -23,16 +23,21 @@
 }
 
 .carouselTitle {
-  margin: 18px;
+  margin: 4px;
   font-weight: bolder;
-  font-size: 65px;
+  font-size: 58px;
   font-family: "Abril Fatface";
 }
 
 .carouselStories {
   font-weight: bold;
-  font-size: 20px;
-  margin: 6px;
+  font-size: 18px;
+}
+
+.carouselStorySubText{
+    font-size: 12px;
+    color: #FFB703;
+    margin-bottom: 8px;
 }
 
 .carousel-btn {
@@ -69,4 +74,9 @@
 
 #circleThree {
   color: #fb8500;
+}
+
+.podiumStorySubText{
+    font-size: 12px;
+    color: gray;
 }
