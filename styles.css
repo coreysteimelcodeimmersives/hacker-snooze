@@ -166,3 +166,21 @@
   color: #333333;
   font-weight: bold;
 }
+
+@media screen and (max-width: 800px) {
+    .carouselTitle{
+        font-size: 24px;
+    }
+
+    .carouselStories{
+        white-space: nowrap; 
+        font-size: 18px;
+        text-overflow: ellipsis;
+        width: 50vw;
+        overflow: hidden;
+    }
+
+    tr{
+        width: 50px
+    }
+  }

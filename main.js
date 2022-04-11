@@ -399,8 +399,6 @@ let getShowNews = async () => {
     }
 };
 
-// getHackerNews().then(getPodiumShowNews()).then(getPodiumAskNews()).then(getPodiumPastNews()).then(getPodiumNewNews());
-
 async function run_processes() {
     let res = null;
     try {
