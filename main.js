@@ -63,42 +63,52 @@ let showCommentsNumberArray = ['5', '55', '555'];
 // Click Listeners
 hackerNewsNav.addEventListener('click', function () {
     updatePodium(hackerNewsPodiumTitlesArray, hackerNesPodiumSubTextPointsArray, hackerNewsPodiumSubTextAuthorArray, hackerNewsPodiumCommentsNumberArray);
+    updateTableRow('https://www.w3docs.com', 'Hacker News', 'Hacker Score', 'Hacker Author', 'Hacker Comments');
 });
 
 hackerNewsCarouselMoreButtonDOM.addEventListener('click', function () {
     updatePodium(hackerNewsPodiumTitlesArray, hackerNesPodiumSubTextPointsArray, hackerNewsPodiumSubTextAuthorArray, hackerNewsPodiumCommentsNumberArray);
+    updateTableRow('https://www.w3docs.com', 'Hacker News', 'Hacker Score', 'Hacker Author', 'Hacker Comments');
 })
 
 newNav.addEventListener('click', function () {
     updatePodium(newPodiumTitlesArray, newPodiumSubTextPointsArray, newPodiumSubTextAuthorArray, newPodiumCommentsNumberArray);
+    updateTableRow('https://www.w3docs.com', 'New News', 'New Score', 'New Author', 'New Comments');
 });
 
 newCarouselMoreButtonDOM.addEventListener('click', function () {
     updatePodium(newPodiumTitlesArray, newPodiumSubTextPointsArray, newPodiumSubTextAuthorArray, newPodiumCommentsNumberArray);
+    updateTableRow('https://www.w3docs.com', 'New News', 'New Score', 'New Author', 'New Comments');
 })
 
 pastNav.addEventListener('click', function () {
     updatePodium(pastPodiumTitlesArray, pastPodiumSubTextPointsArray, pastPodiumSubTextAuthorArray, pastPodiumCommentsNumberArray);
+    updateTableRow('https://www.w3docs.com', 'Past News', 'Past Score', 'Past Author', 'Past Comments');
 });
 
 pastCarouselMoreButtonDOM.addEventListener('click', function () {
     updatePodium(pastPodiumTitlesArray, pastPodiumSubTextPointsArray, pastPodiumSubTextAuthorArray, pastPodiumCommentsNumberArray);
+    updateTableRow('https://www.w3docs.com', 'Past News', 'Past Score', 'Past Author', 'Past Comments');
 });
 
 askNav.addEventListener('click', function () {
     updatePodium(askPodiumTitlesArray, askPodiumSubTextPointsArray, askPodiumSubTextAuthorArray, askPodiumCommentsNumberArray);
+    updateTableRow('https://www.w3docs.com', 'Ask News', 'Ask Score', 'Ask Author', 'Ask Comments');
 });
 
 askCarouselMoreButtonDOM.addEventListener('click', function () {
     updatePodium(askPodiumTitlesArray, askPodiumSubTextPointsArray, askPodiumSubTextAuthorArray, askPodiumCommentsNumberArray);
+    updateTableRow('https://www.w3docs.com', 'Ask News', 'Ask Score', 'Ask Author', 'Ask Comments');
 });
 
 showNav.addEventListener('click', function () {
     updatePodium(showPodiumTitlesArray, showPodiumSubTextPointsArray, showPodiumSubTextAuthorArray, showCommentsNumberArray);
+    updateTableRow('https://www.w3docs.com', 'Show News', 'Show Score', 'Show Author', 'Show Comments');
 });
 
 showCarouselMoreButtonDOM.addEventListener('click', function () {
     updatePodium(showPodiumTitlesArray, showPodiumSubTextPointsArray, showPodiumSubTextAuthorArray, showCommentsNumberArray);
+    updateTableRow('https://www.w3docs.com', 'Show News', 'Show Score', 'Show Author', 'Show Comments');
 });
 
 // Helper Functions
@@ -137,20 +147,26 @@ var tdRowScore = $(`<td class='tableStories'>Score</td>`);
 var tdRowAuthor = $(`<td class='tableStories'>Author</td>`);
 var tdRowComments = $(`<td class='tableStories'>Comments</td><`);
 
-let updateTableRow = (rowNumber, rowURL, rowTitle, rowScore, rowAuthor, rowComments) => {
-    for (let i = 1; i < 98; i++) {
+let intializeTableRow = (rowNumber, rowURL, rowTitle, rowScore, rowAuthor, rowComments) => {
+    for (let i = 4; i < 101; i++) {
         rowNumber = i;
+        let rowNumberId = `rowNumberId${i}`;
         let newRowTitle = `${rowTitle} ${i}`;
+        let rowTitleId = `rowTitleId${i}`
         let newRowScore = `${rowScore} ${i}`;
+        let rowScoreId = `rowScoreId${i}`
         let newRowAuthor = `${rowAuthor} ${i}`;
+        let rowAuthorId = `rowAuthorId${i}`
         let newRowComments = `${rowComments} ${i}`;
+        let rowCommentsId = `rowCommentsId${i}`;
         myTable = $("#myTable > tbody");
         tableRow = $(`<tr></tr>`);
-        tdRowNumber = $(`<td class='tableStyle'>${rowNumber}</td>`);
-        tdRowTitle = $(`<td class='tableStories'><a class='tableStories' href=${rowURL}>${newRowTitle}</a></td>`);
-        tdRowScore = $(`<td class='tableStyle'>${newRowScore}</td>`);
-        tdRowAuthor = $(`<td class='tableStyle'>${newRowAuthor}</td>`);
-        tdRowComments = $(`<td class='tableStyle'>${newRowComments}</td><`);
+        tdRowNumber = $(`<td class='tableStyle' id=${rowNumberId}>${rowNumber}</td>`);
+        tdRowTitle = $(`<td class='tableStories'><a class='tableStories' id=${rowTitleId} href=${rowURL}>${newRowTitle}</a></td>`);
+        tdRowScore = $(`<td class='tableStyle' id=${rowScoreId}>${newRowScore}</td>`);
+        tdRowAuthor = $(`<td class='tableStyle' id=${rowAuthorId}>${newRowAuthor}</td>`);
+        tdRowComments = $(`<td type="button" data-bs-toggle="modal"
+        data-bs-target="#exampleModal" class='tableCommentsStyle' id=${rowCommentsId}>${newRowComments}</td><`);
         tableRow.append(tdRowNumber);
         tableRow.append(tdRowTitle);
         tableRow.append(tdRowScore);
@@ -160,19 +176,20 @@ let updateTableRow = (rowNumber, rowURL, rowTitle, rowScore, rowAuthor, rowComme
     }
 };
 
-updateTableRow(rowNumber, rowURL, rowTitle, rowScore, rowAuthor, rowComments);
+intializeTableRow(rowNumber, rowURL, rowTitle, rowScore, rowAuthor, rowComments);
 
-// .css({
-//     'font-size': '18 px',
-//     'font-family': "Poppins",
-//     'color': '#333333',
-//     'font-weight': 'bold'
-// });
+let updateTableRow = (rowURL, rowTitle, rowScore, rowAuthor, rowComments) => {
+    for (let i = 4; i < 101; i++){
+        let rowTitleDOM = $(`#rowTitleId${i}`);
+        rowTitleDOM.attr('href', rowURL);
+        rowTitleDOM.text(`${rowTitle} ${i}`);
+        let rowScoreDOM = $(`#rowScoreId${i}`);
+        rowScoreDOM.text(`${rowScore} ${i}`);
+        let rowAuthorDOM = $(`#rowAuthorId${i}`);
+        rowAuthorDOM.text(`${rowAuthor} ${i}`);
+        console.log('working')
+        let rowCommentsDOM = $(`#rowCommentsId${i}`);
+        rowCommentsDOM.text(`${rowComments} ${i}`);
+    }
+}
 
-
-            // 'font-family': "Poppins",
-            // 'color': '#333333',
-
-
-        //     tableRow = $(`<tr><td class='tableStories'>${rowNumber}</td><td class='tableStories'><a href=${rowURL}>${newRowTitle}</a></td><td class='tableStories'>${newRowScore}</td><td class='tableStories'>${newRowAuthor}</td><td class='tableStories'>${newRowComments}</td></tr>`).css({'font-weight': 'bold', 'font-size': '18 px'});
-        // myTable.append(tableRow);

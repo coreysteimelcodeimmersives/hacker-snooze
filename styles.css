@@ -118,12 +118,26 @@
   font-weight: bold;
 }
 
-.tableStories {
+.tableCommentsStyle {
+  font-size: 18px;
+  font-family: "Poppins";
+  color: #333333;
+  font-weight: bold;
+}
+
+.tableCommentsStyle:hover {
     font-size: 18px;
     font-family: "Poppins";
-    color: #333333;
+    color: #FFB703;
     font-weight: bold;
   }
+
+.tableStories {
+  font-size: 18px;
+  font-family: "Poppins";
+  color: #333333;
+  font-weight: bold;
+}
 
 .tableStories:link {
   font-size: 18px;
